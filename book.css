@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 66%;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.form_label {
+  font-size: 15px;
+}
+.form-radio-label {
+  font-size: 12px;
+}
+.book {
+  height: 400px;
+  width: 600px;
+  margin: 70px;
+  border-radius: 5px;
+
+  background-image: linear-gradient(
+      105deg,
+      rgb(39, 161, 231) 0%,
+      rgb(45, 127, 182) 50%,
+      transparent 50%
+    ),
+    url(images/temple.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.form_input {
+  font-size: 1.5rem;
+
+  border-radius: 2px;
+  background-color: rgba(196, 230, 230, 0.4);
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+.form_input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #07575b;
+  background-color: rgb(196, 233, 230);
+}
+.form_input:focus:invalid {
+  border-bottom: 3px solid #db3030;
+}
+.form_radio-group {
+  width: 45%;
+  display: inline;
+}
+.heading {
+  padding: 20px;
+  font-size: 30px;
+}
+.btn {
+  padding: 10px;
+  transform: all 0.2s;
+  border: none;
+  cursor: pointer;
+  background-color: #07575b;
+  color: white;
+  margin: 20px;
+}
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
